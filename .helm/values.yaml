@@ -1,0 +1,26 @@
+image: "docker.ginsp.net/pagerduty-prometheus-exporter-dev:0.0.4"
+
+metricsSRVPort: 9100
+webhookSRVPort: 8080
+
+incidentWebhookPath: ""
+
+metricsNamespace: ""
+
+analytics:
+  scrape: true
+  scrapeInterval: 2m
+  serviceMetricNames: ""
+  reportPeriods: "720h" # 1 month
+
+
+users:
+  scrape: true
+  scrapeInterval: 5m
+
+dtFormat: ""
+
+debug: true
+
+pagerdutyAuthToken: "u+9q2t_dd6heAdGk_UxA"
+incidentWebhookSignatureSecret: "Wc/zQ+L1NZgil5glifDVcK4bH4Q1L40N7rj4qRUCKNUSojZQHOlOi0L83q7aWkaf"
